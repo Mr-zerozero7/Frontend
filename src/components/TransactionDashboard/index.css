@@ -1,0 +1,155 @@
+:root {
+    --main-color: #F6D776;
+}
+body{
+    height: 100vh;
+    max-width: 100%;
+    font-family: sans-serif;
+    background-color: #EBD9B4;
+}
+
+/* Main Container Style */
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 15px;
+    padding: 20px; */
+}
+
+
+
+/* input search and month styles */
+.inputs-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.search-input{
+    width: 200px;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgba(228, 187, 84, 0.856);
+    border: none;
+    outline: none;
+    color: black;
+    font-weight: bold;
+}
+
+.select-month{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(216, 168, 48, 0.856);
+}
+
+
+
+/* table column and rows styels */
+.table-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 10px;
+    margin: 15px
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+  }
+  thead{
+    border-radius: 10px;
+  }
+  
+  th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color: var(--main-color);
+      
+  }
+
+td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color: var(--main-color); 
+    white-space: nowrap;
+    max-width: 350px;
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+tr th::nth-child(4){
+    width: 250px;
+}
+
+
+/* Page and Prev-Next button styles */
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    font-weight: bold;
+}
+.page-btn{
+    border: none;
+    padding: 5px;
+    color: black;
+    font-weight: 600;
+    background-color: #EBD9B4;
+    font-size: 18px;
+}
+
+
+/* statistics card styles */
+.statistics-card-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #F6D776;
+    border-radius: 10px;
+    width: 30%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.stats-heading{
+    font-size: 18px;
+    text-align: center;
+}
+.stats-tag{
+    text-align: left;
+    padding-left: 15px;
+    margin-left: 10px;
+}
+span{
+    font-weight: bold;
+}
+.sold-span{
+    padding-left: 27px;
+}
+.sale-span{
+    padding-left: 12px;
+}
+
+
+
+
+/* bar chart styles */
+.bar-chart-container{
+    margin-top: 60px;
+}
+.statistics-chart-container{
+    margin-top: 30px;
+}
+.bar-chart-heading{
+    text-align: center;
+    margin-bottom: 30px;
+}
